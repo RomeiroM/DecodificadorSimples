@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <title>Decodificador de Texto</title>
+</head>
+<body >
+    <main class="content_class">
+        <section class="primeiro_bloco">
+        <textarea class="primeiro_bloco_texto" rows="10" cols="40" placeholder="Digite seu texto"></textarea>
+        
+        <a class="info">
+            <img src="assets/info.png" alt="simbolo de informação"/>
+            Apenas letras minúsculas e sem acento
+        </a>
+
+        <div class="botoes">
+            <a  onclick="criptografar()" class="botao" id="criptografar">Criptografar</a>
+            <a  onclick="descriptografar()" class="botao">Descriptografar</a>
+        </div>
+
+        </section>
+        <section class="segundo_bloco">
+
+            <div class="dec_area">
+                <img class="dec_img" src="assets/img_inicio.png"/>
+                <p class="dec_area_primeiro">Nenhuma mensagem encontrada</p>
+                <p class="dec_area_segundo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <p id="copiar" class="traducao"></p>
+                <a  onclick="copiar()" class="botao">Copiar</a>
+            </div>
+
+        </section>
+    </main>
+
+<!-- ### #### #### Rodapé ### #### ######-->
+    <!--<footer>
+        <p class="rodape">Desenvolvido por Maria Alves</p>
+    </footer>-->
+    <script src="js/app.js" defer></script>
+</body>
+</html>

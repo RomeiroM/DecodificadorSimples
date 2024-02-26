@@ -1,0 +1,148 @@
+/*Rest CSS*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/*https://colorhunt.co/palettes/summer*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+    background-color: #E5E5E5;
+}
+
+.content_class{
+    display: flex;
+    flex-direction: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    padding: 5% 5%;
+}
+
+.primeiro_bloco{
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.primeiro_bloco_texto{
+    font-size: 32px;
+    color: blue;
+    padding: 2px;
+    background-color: #E5E5E5;
+    text-decoration: none;
+    outline: 0;
+    border: 0 none;
+    
+}
+.primeiro_bloco_texto::placeholder {
+    color: blue;
+}
+.info{
+    margin-top: 10px;
+    background-color: #E5E5E5;
+    color: #495057;
+    margin: 10px;
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    text-decoration: none; 
+}
+.botao{
+    padding: 24px 24px;
+    border-radius: 24px;
+    text-align: center;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: solid;
+    border-color: #0A3871;
+    border-width: 1px;
+    width: 50%;
+}
+#criptografar{
+    background-color: #0A3871;
+    color: aliceblue;
+}
+.dec_area{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 40rem;
+    padding: 32px;
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    box-shadow: 0px 24px 32px #9f9d9d;
+    height: 40rem;
+}
+.dec_img{
+    width: 304px;
+    height: 336px;
+}
+
+.dec_area_primeiro{
+    font-size: 24px;
+    font-style: bold;
+    margin-top: 16px;
+    
+}
+.dec_area_segundo{
+    color: #495057;
+    margin-top: 16px;
+    
+}
+
+.traducao{
+    padding-bottom: 20px;
+    font-size: 24px;
+}
+
+footer{
+    background-color: #9f9d9d;
+    padding: 24px 24px;
+    text-align: center;
+    color: #0A3871;
+}
+
+
+@media(max-width: 1200px){
+
+.primeiro_bloco{
+    width: 100%;
+}
+
+.content_class{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 5% 5%;
+}
+.dec_img{
+    display: none;
+}
+
+.botao{
+    padding: 10px 24px;
+    width: 100%;
+    border-radius: 15px;
+}
+.dec_area{
+    height: auto;
+    width: auto;
+}
+
+}
+@media(max-width: 375px){
+.botoes{
+    flex-direction: column;
+}
+}
